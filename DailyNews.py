@@ -45,8 +45,8 @@ def get_latest_PDS(tab):
 on /r/DeFranco"""
 	row=0
 	col=0
-	reddit = praw.Reddit(client_id='vyhbMesXwa0dnA',
-		client_secret='BzAVlcjeObDkpAanHlK84X0Wrek',
+	reddit = praw.Reddit(client_id='',
+		client_secret='',
 		user_agent='Link and title extraction')
 	PDS_bot = reddit.redditor('Trey-Mazing')
 	PDS_post = PDS_bot.submissions.new(limit=10)
@@ -70,8 +70,8 @@ def get_rs_news(tab):
 and retrieves the links to those posts"""
 	col=0
 	title_content = ['TL;DR','TL;DW','Patch Notes', 'Dev Blog']
-	reddit = praw.Reddit(client_id='vyhbMesXwa0dnA',
-					client_secret='BzAVlcjeObDkpAanHlK84X0Wrek',
+	reddit = praw.Reddit(client_id='',
+					client_secret='',
 					user_agent='Link and title extraction')
 	subreddit = reddit.subreddit('runescape')
 	submissions = subreddit.hot(limit=25)
@@ -89,8 +89,8 @@ Also allows for iltering by tag"""
 	i=0
 	row=0
 	col=0
-	reddit = praw.Reddit(client_id='vyhbMesXwa0dnA',
-		client_secret='BzAVlcjeObDkpAanHlK84X0Wrek',
+	reddit = praw.Reddit(client_id='',
+		client_secret='',
 		user_agent='Link and title extraction')
 	subreddit = reddit.subreddit(sub)
 	submissions = subreddit.hot()
